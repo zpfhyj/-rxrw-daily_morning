@@ -52,5 +52,5 @@ wea, humidity, temperature = get_weather()
 data = {"weather":{"value":wea},"humidity":{"value":humidity},"temperature":{"value":temperature},"love_days":{"value":get_count()},"birthday_left":{"value":get_birthday()},"words":{"value":get_words(), "color":get_random_color()}}
 res = wm.send_template(user_id, template_id, data)
 print(res)
-res2 = wm.send_template(user_id2, template_id, data)
-print(res2)
+res = wm.send_template(user_id2, template_id, data)
+print(res)
