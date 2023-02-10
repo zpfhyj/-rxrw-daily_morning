@@ -26,7 +26,7 @@ def get_weather():
   #weather = res['data']['list'][0]
   weather = res['data']
   #return weather['weather'], weather['humidity'],math.floor(weather['temp'])
-  return weather['tq'], weather['sd']+"%",match.floor(weather['qw'])
+  return weather['tq'], weather['sd']+"%",math.floor(weather['qw'])
 
 def get_count():
   delta = today - datetime.strptime(start_date, "%Y-%m-%d")
